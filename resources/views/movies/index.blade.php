@@ -9,6 +9,7 @@
 <body>
     @foreach($movies as $movie)
         <a href="{{route('movies.show', $movie->id)}}"><h2>{{ $movie->title }}</h2></a>
-    @endforeach 
+    @endforeach
+    <a href="{{route('movies.create')}}">Crea nuovo film</a>
 </body>
 </html>
